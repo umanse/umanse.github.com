@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>flati | responsive html5 template | themeforest | josweb</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+<!--[if IE]>
+	<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">
+	<![endif]-->
+
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/theme.css" rel="stylesheet">
+	<link href="css/colour.css" rel="stylesheet" type="text/css"/>
+	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css"/>
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+	<!--header-->
+	<div class="header">
+		<!--menu-->
+		<nav id="main_menu" class="navbar" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<!--logo-->
+					<div class="logo">
+						<a href="index.html"><img src="img/logo.png" alt="" class="animated bounceInDown" /></a> 
+					</div>
+				</div>
+
+			</nav>
+		</div>
+		<!--//header-->
+
+		<div class="container wrapper">
+			<div class="inner_content">
+					<div class="row">
+						<div class="col-md-8">
+
+							<!--skill bars-->
+							<h2>PROJECT Progress</h2>
+
+							<div class="progress">
+								<div class="bar" data-percentage="50">
+								</div>
+							</div>	
+							<small>ENVIRONMENTAL ANALYSIS</small>
+
+							<div class="progress">
+								<div class="bar" data-percentage="30">
+								</div>
+							</div>
+							<small>SERVICE DESIGN</small>
+
+							<div class="progress">
+								<div class="bar" data-percentage="20">
+								</div>
+							</div>
+							<small>DEVELOPMENT DESIGN</small>
+
+							<div class="progress">
+								<div class="bar" data-percentage="10">
+								</div>
+							</div>
+							<small>IN DEVELOPMENT</small>
+						</div>
+
+						<!--testimonial-->
+						<div class="col-md-4 pad25">
+							<div class="testimonial1">
+								<p>
+									<i class="fa fa-comments fa-4x pull-left hue"></i>
+									We are all together connected and linked. we should help each other for us and world. We have power to improve our live and our environment. It's time to change the world together. Let's be together and connected. This system should be great to do together something greate and cool. Believe you and us. That's all to be getting started.
+								</p>
+							</div>
+							<div class="center">
+								<p><small>HUNS</small></p>
+							</div>
+							<div class="pad45 hidden-md hidden-lg"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+				<!--strip-->
+				<div class="strip">
+					<h1 class="center">NEW COMMUNICATION CHANNEL</h1>
+					
+				</div>
+				<!--/strip-->
+				
+				<!--footer-->
+				<div id="footer2">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="copyright">
+									UMANSE
+									&copy;
+									<script type="text/javascript">
+							//<![CDATA[
+							var d = new Date()
+							document.write(d.getFullYear())
+								//]]>
+								</script>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- up to top -->
+			<a href="#"><i class="go-top fa fa-angle-double-up"></i></a>
+			<!--//end--> 
+
+			<!-- scripts -->
+			<script src="js/jquery.js"></script>			
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/retina.js"></script>
+			<script type="text/javascript" src="js/scripts.js"></script>
+			<!-- skills -->
+			<script>
+//<![CDATA[
+setTimeout(function(){
+	$('.progress .bar').each(function() {
+		var me = $(this);
+		var perc = me.attr("data-percentage");
+		var current_perc = 0;
+		var progress = setInterval(function() {
+			if (current_perc>=perc) {
+				clearInterval(progress);
+			} else {
+				current_perc +=1;
+				me.css('width', (current_perc)+'%');
+			}
+			me.text((current_perc)+'%');
+		}, 20);
+	});
+},300);
+	 //]]>
+	 </script>
+
+	</body>
+	</html>
